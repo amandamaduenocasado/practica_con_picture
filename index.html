@@ -9,7 +9,11 @@
   </head>
   <body>
     <main class="main">
-      <img src="/assets/images/image-product-mobile.jpg" alt="image" class="image-mobile" />
+      <picture>
+        <source media="(min-width: 768px)" srcset="/assets/images/image-product-desktop.jpg" />
+        <source media="(min-width: 360px)" srcset="/assets/images/image-product-mobile.jpg" />
+        <img src="/assets/images/image-product-mobile.jpg" alt="image" class="image-mobile" />
+      </picture>
 
       <section class="header">
         <h2 class="subtitle">PERFUME</h2>
